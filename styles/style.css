@@ -222,9 +222,10 @@ ol {
 }
 
 .content__video-card-description {
+  margin-top: 5px;
   display: -webkit-box;
   overflow: hidden;
-  line-height: 27px;
+  line-height: 16.2px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4; /* взял подсказку у нейросети, потому что ранее данное свойство не проходили, а в Шаг3.5 указано решать через line-clamp */
 }
