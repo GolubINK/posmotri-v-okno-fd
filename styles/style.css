@@ -65,7 +65,9 @@ ol {
 }
 
 .result__video-container video {
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -111,6 +113,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: transparent;
   appearance: none;
@@ -118,9 +121,6 @@ ol {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: normal;
-  font-size: 17.5px;
 }
 
 .search-form__checkbox-list {
@@ -215,6 +215,7 @@ ol {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -223,7 +224,7 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  line-height: 16.2px;
+  line-height: 27px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4; /* взял подсказку у нейросети, потому что ранее данное свойство не проходили, а в Шаг3.5 указано решать через line-clamp */
 }
@@ -243,14 +244,6 @@ ol {
 .result__video-container,
 .content__list-container {
   position: relative;
-}
-
-.preloader-template {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .button:hover,
